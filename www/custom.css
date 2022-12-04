@@ -8,6 +8,24 @@
     font-weight: 500;
     line-height: 1.5rem;
 }
+.tabler-card-header {
+    display: block;
+    margin: 0;
+    background-color: black;
+}
+.tabler-card2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(101,109,119,.16);
+    border-radius: 10px;
+    box-shadow: rgb(35 46 60 / 4%) 0 2px 4px 0;
+}
 .tabler-card {
     position: relative;
     display: flex;
@@ -23,6 +41,10 @@
 .tabler-card-body {
     flex: 1 1 auto;
     padding: 1rem 1rem;
+}
+.tabler-card-body2 {
+    flex: 1 1 auto;
+    padding: 0rem;
 }
 .tabler-subheader {
     font-size: .625rem;

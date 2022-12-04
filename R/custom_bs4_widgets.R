@@ -47,6 +47,84 @@ tabler_card2 = function(title, ...){
     )
   )
 }
+tabler_card3 = function(title, ...){
+  div(
+    class = "tabler-card",
+    div(
+      class = "tabler-card-body2",
+      span(class = "tabler-card-header", title),
+      ...
+    )
+  )
+}
+
+
+bs4_card <- function(body, title) {
+  div(
+    class = "card",
+    div(class = "card-header bg-primary", title),
+    div(class = "card-body d-flex justify-content-center", body)
+  )
+}
+
+
+
+card = function(...){
+  div(class = "card", 
+      style = "border-radius: 10px;",
+      ...)
+}
+
+card_header = function(...){
+  tags$div(
+    class = "bg-primary text-white p-2 m-0",
+    style = "border-top-left-radius: 8px; border-top-right-radius: 8px;",
+    #style = "background-color: black"
+    ...
+  )
+}
+
+card_body = function(...){
+  div(
+    class = "card-body",
+    style = "padding: 1rem 1rem; margin: 0",
+    ...
+  )
+}
+
+# library(shiny)
+# 
+# ui <- fluidPage(
+#   theme = bs_theme(version = 4),
+#   fluidRow(
+#     column(
+#       width = 3,
+#       card(
+#         card_header("this is title"),
+#         card_body("hahahaha")
+#       )
+#     ),
+#     column(
+#       width = 3,
+#       tags$div(
+#         class = "card",
+#         tags$h5(
+#           class = "card-header", "This is title"
+#         ),
+#         tags$div(
+#           class = "card-body",
+#           "hahahahaha"
+#         )
+#       )
+#     )
+#   )
+# )
+# 
+# server <- function(input, output, session) {
+#   
+# }
+# 
+# shinyApp(ui, server)
 
 
 # backup
